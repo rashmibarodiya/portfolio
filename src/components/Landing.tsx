@@ -1,6 +1,16 @@
 import { HERO_CONTENT } from "../content/Intro";
-import Billa from "../../public/BillaImage.jpeg"
+import Billa from "/BillaImage.jpeg"
+import { motion } from "framer-motion"
 
+
+const contain = (delay: number) => ({
+    hidden: { x: -100, opacity: 0 },
+    visible: {
+        x: 0,
+        opacity: 1,
+        transition: { duration: 0.5, delay: delay }
+    }
+})
 export default function Intro() {
     return (
 
@@ -8,20 +18,40 @@ export default function Intro() {
             <div className="flex flex-wrap text-white">
                 <div className="w-full lg:w-1/2 ">
                     <div className="flex flex-col items-center lg:items-start ">
-                        <h1 className=" text-5xl pb-16 font-thin tracking-tight lg:mt-16  lg:text-7xl  ">
+                        <motion.h1
+                            variants={contain(0)}
+                            initial="hidden"
+                            animate="visible"
+
+
+                            className=" text-5xl pb-16 font-thin tracking-tight lg:mt-16  lg:text-7xl  ">
                             Rashmi Barodiya
-                        </h1>
-                        <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text
+                        </motion.h1>
+                        <motion.span
+                            variants={contain(0.5)}
+                            initial="hidden"
+                            animate="visible"
+                            className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text
             tracking-tight text-transparent text-4xl ">
                             Full Stack Developer
-                        </span>
-                        <p className=" my-2 py-6 font-light max-w-xl tracking-tight">
+                        </motion.span>
+                        <motion.p
+
+                            variants={contain(1)}
+                            initial="hidden"
+                            animate="visible"
+
+                            className=" my-2 py-6 font-light max-w-xl tracking-tight">
                             {HERO_CONTENT}
-                        </p>
+                        </motion.p>
                     </div>
                 </div>
                 <div className="w-full lg:w-1/3 lg:p-8 lg:mt-16">
-                    <img src={Billa} alt="billa" className="w-80 h-80" />
+                    <motion.img 
+                    initial={{x:100,opacity:0}}
+                    animate={{x:0,opacity:1}}
+                    transition={{duration:0.5,delay:1.3}}
+                    src={Billa} alt="billa" className="w-80 h-80" />
                 </div>
 
             </div>

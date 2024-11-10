@@ -1,5 +1,6 @@
 import './App.css'
 import About from './components/About'
+import Contact from './components/Contact'
 import Exp from './components/Experience'
 import Intro from './components/Landing'
 import Navbar from './components/Navbar'
@@ -22,6 +23,7 @@ function App() {
         <Tech/>
         <Exp/>
         <Projects/>
+        <Contact/>
         
         hi there 
       </div>

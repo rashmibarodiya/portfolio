@@ -1,10 +1,11 @@
 
 import avt from "../../public/avt3.svg"
 import { ABOUT } from "../content/Intro"
+import {motion} from "framer-motion"
 export default function About() {
     return (
         <div className="border-b border-neutral-900 ">
-            <h1 className="text-white text-center font-thin my-20  text-4xl ">
+            <h1 className="text-white text-center font-thin my-16 text-4xl ">
                 About
                 <span className="text-neutral-500 ml-2">
                     Me
@@ -16,18 +17,26 @@ export default function About() {
 
                 <div className="w-full lg:w-1/2">
                 <div className="flex justify-center">
-                <img src={avt} alt="avt" className=" w-64 h-64" />
+                <motion.img
+                whileInView={{opacity:1,x:0}}
+                initial={{opacity:0,x:-100}}
+                transition={{duration:0.5}}
+                src={avt} alt="avt"  width={250} height={250} className="" />
                 </div>
                     
                 </div>
                 <div className=" w-full lg:w-1/2 ">
-                    <div className="text-neutral-200 lg:mt-8 justify-center lg:justify-left">
+                    <motion.div
+                     whileInView={{opacity:1,x:0}}
+                     initial={{opacity:0,x:100}}
+                     transition={{duration:0.5}}
+                    className="text-neutral-300 max-w-xl lg:mt-8 justify-center lg:justify-left">
                         {ABOUT}
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>
-            this is about
+           
         </div>
     )
 }
