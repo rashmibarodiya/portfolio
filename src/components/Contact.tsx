@@ -1,17 +1,31 @@
 
 const phone = import.meta.env.VITE_PHONE!
 const email = import.meta.env.VITE_EMAIL!
+
+import {motion} from "framer-motion"
 export default function Contact() {
     return (
         <div className="border-b border-neutral-800 pb-4">
 
-            <h1 className="font-thin text-4xl m-10 text-white text-center">
+            <motion.h1
+             whileInView={{y:0,opacity:1}}
+             initial={{y:-100,opacity:0}}
+             transition={{duration:3.5}}
+            className="font-thin text-4xl m-10 text-white text-center">
                 Ready to Connect?
-            </h1>
+            </motion.h1>
 
             <div className="font-thin text-center text-neutral-400">
-                <h1>{phone}</h1>
-                <h1>{email}</h1>
+                <motion.h1
+                 whileInView={{x:0,opacity:1}}
+                 initial={{x:-100,opacity:0}}
+                 transition={{duration:3.5}}
+                >{phone}</motion.h1>
+                <motion.h1
+                 whileInView={{x:0,opacity:1}}
+                 initial={{x:100,opacity:0}}
+                 transition={{duration:3.5}}
+                >{email}</motion.h1>
             </div>
         </div>
     )

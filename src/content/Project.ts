@@ -1,7 +1,7 @@
 
 import recipe from "/recipe.jpg"
 import evt2 from "/evt2.jpg"
-import evt from "/evt.jpg"
+// import evt from "/evt.jpg"
 export const PROJECTS = [
     {
       title: "RecipeWorld",

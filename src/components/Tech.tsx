@@ -22,10 +22,14 @@ const techMove = (duration: number) => ({
 export default function Tech() {
     return (
         <div className="border-b border-neutral-800 pb-20">
-            <h1 className="text-4xl text-white font-thin py-10 text-center">
+            <motion.h1 
+             whileInView={{x:0,opacity:1}}
+             initial={{x:100,opacity:0}}
+             transition={{duration:3.5}}
+            className="text-4xl text-white font-thin py-10 text-center">
                 Tech Stack
 
-            </h1>
+            </motion.h1>
             <motion.div 
             whileInView={{x:0,opacity:1}}
             initial={{x:-150,opacity:0}}
