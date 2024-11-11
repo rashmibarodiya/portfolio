@@ -2,10 +2,14 @@
 import recipe from "/recipe.jpg"
 import evt2 from "/evt2.jpg"
 // import evt from "/evt.jpg"
+
+const rlink= import.meta.env.VITE_RECIPE
+const elink= import.meta.env.VITE_EVT
 export const PROJECTS = [
     {
       title: "RecipeWorld",
       image: recipe,
+      link:rlink,
       time:"Sep 2024 - Oct 2024",
       description:
         `A recipe-sharing platform that empowers users to explore, add, rate and search for 40+ recipes across
@@ -15,6 +19,7 @@ export const PROJECTS = [
     {
       title: "EvenTTracker",
       image: evt2,
+      link:elink,
       time:"Oct 2024 - Nov 2024",
       description:
         `An application for managing events and projects, with features such as addition, deletion, modification 

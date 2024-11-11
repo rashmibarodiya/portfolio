@@ -15,7 +15,7 @@ export default function Intro() {
     return (
 
         <div className="border-b border-neutral-900 py-4 lg:mb-35">
-            <div className="flex flex-wrap text-white">
+            <div className="flex flex-wrap text-neutral-300">
                 <div className="w-full lg:w-1/2 ">
                     <div className="flex flex-col items-center lg:items-start ">
                         <motion.h1
@@ -41,7 +41,7 @@ export default function Intro() {
                             initial="hidden"
                             animate="visible"
 
-                            className=" my-2 py-6 font-light max-w-xl tracking-tight">
+                            className=" my-2 py-6 font-thin max-w-xl tracking-tight">
                             {HERO_CONTENT}
                         </motion.p>
                     </div>

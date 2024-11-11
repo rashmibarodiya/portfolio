@@ -6,7 +6,7 @@ import { MdOutlineMailOutline, MdOutlinePhoneEnabled } from "react-icons/md"
 
 
 
-const phone = import.meta.env.VITE_PHONE!
+// const phone = import.meta.env.VITE_PHONE!
 const email = import.meta.env.VITE_EMAIL!
 const github = import.meta.env.VITE_GITHUB!
 const x = import.meta.env.VITE_X!
@@ -29,7 +29,10 @@ export default function Navbar() {
                         onClick={() => window.location.href = `${x}`}
                     />
                     <MdOutlineMailOutline className="cursor-pointer"
-                        onClick={() => window.location.href = `${email}`}
+                        onClick={() => 
+                            window.location.href = `mailto:=${email}?subject=Hello%20there&body=
+                            Hello%20there!%20I%20hope%20you're%20doing%20well.`
+    }
                     />
                     <MdOutlinePhoneEnabled className="cursor-pointer" />
                 </div>

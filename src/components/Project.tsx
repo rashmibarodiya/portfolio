@@ -29,7 +29,9 @@ export default function Projects() {
                         className="w-full max-w-xl lg:w-3/4 ">
                             <div className="font-semibold mb-4  p-1 mr-3 flex flex-wrap justify-between">
                                 <h1>{project.title}</h1>
-                                {/* <h1 className="font-thin">{project.time}</h1> */}
+                                <button
+                                onClick={()=>window.location=project.link}
+                                className="font-thin curson-pointer hover:text-blue-500">Lean More</button>
                             </div>
                             <p className="text-neutral-400 mb-2">{project.description}
                             </p>
