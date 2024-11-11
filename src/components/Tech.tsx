@@ -25,7 +25,7 @@ export default function Tech() {
             <motion.h1 
              whileInView={{x:0,opacity:1}}
              initial={{x:100,opacity:0}}
-             transition={{duration:3.5}}
+             transition={{duration:2.5}}
             className="text-4xl text-white font-thin py-10 text-center">
                 Tech Stack
 

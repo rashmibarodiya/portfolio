@@ -7,21 +7,21 @@ export default function Exp() {
             <motion.h1
                 whileInView={{ y: 0, opacity: 1 }}
                 initial={{ y: -100, opacity: 0 }}
-                transition={{ duration: 3.5 }}
+                transition={{ duration: 1.5 }}
                 className="text-white font-thin text-center my-20  text-4xl">Open Source Experience</motion.h1>
             <div className="flex flex-wrap justify-center text-white">
                 <div className="w-full text-sm items-center text-center text-neutral-400 lg:w-1/2">
                     <motion.p
                         whileInView={{ x: 0, opacity: 1 }}
                         initial={{ x: -100, opacity: 0 }}
-                        transition={{ duration: 3.5 }}
+                        transition={{ duration: 1.5 }}
                     >{EXP.year}</motion.p>
 
                 </div>
                 <motion.div
                     whileInView={{ x: 0, opacity: 1 }}
                     initial={{ x: 100, opacity: 0 }}
-                    transition={{ duration: 3.5 }}
+                    transition={{ duration: 1.5 }}
                     className="w-full lg:w-1/2 ">
                     <p className="font-semibold mb-4">{EXP.company}</p>
                     <p className="font-thin max-w-2xl  mb-4">{EXP.description}</p>

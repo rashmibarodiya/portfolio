@@ -10,7 +10,7 @@ export default function Contact() {
             <motion.h1
              whileInView={{y:0,opacity:1}}
              initial={{y:-100,opacity:0}}
-             transition={{duration:3.5}}
+             transition={{duration:1.7}}
             className="font-thin text-4xl m-10 text-white text-center">
                 Ready to Connect?
             </motion.h1>
@@ -19,12 +19,12 @@ export default function Contact() {
                 <motion.h1
                  whileInView={{x:0,opacity:1}}
                  initial={{x:-100,opacity:0}}
-                 transition={{duration:3.5}}
+                 transition={{duration:1.7}}
                 >{phone}</motion.h1>
                 <motion.h1
                  whileInView={{x:0,opacity:1}}
                  initial={{x:100,opacity:0}}
-                 transition={{duration:3.5}}
+                 transition={{duration:1.7}}
                 >{email}</motion.h1>
             </div>
         </div>
