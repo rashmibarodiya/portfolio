@@ -15,7 +15,7 @@ export default function About() {
 
             <div className=" flex flex-wrap  items-center lg:items-start">
 
-                <div className="w-full lg:w-1/2">
+                <div className="w-full lg:w-1/2 p-8">
                 <div className="flex justify-center">
                 <motion.img
                 whileInView={{opacity:1,x:0}}

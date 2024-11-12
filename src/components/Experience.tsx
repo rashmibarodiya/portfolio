@@ -10,7 +10,7 @@ export default function Exp() {
                 transition={{ duration: 1.5 }}
                 className="text-white font-thin text-center my-20  text-4xl">Open Source Experience</motion.h1>
             <div className="flex flex-wrap justify-center text-white">
-                <div className="w-full text-sm items-center text-center text-neutral-400 lg:w-1/2">
+                <div className="w-full text-sm items-center text-center text-neutral-400 lg:w-1/2 p-4">
                     <motion.p
                         whileInView={{ x: 0, opacity: 1 }}
                         initial={{ x: -100, opacity: 0 }}

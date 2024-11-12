@@ -46,7 +46,7 @@ export default function Intro() {
                         </motion.p>
                     </div>
                 </div>
-                <div className="w-full lg:w-1/3 lg:p-8 lg:mt-16">
+                <div className="flex justify-center w-full lg:w-1/3 lg:p-8 lg:mt-16">
                     <motion.img 
                     initial={{x:100,opacity:0}}
                     animate={{x:0,opacity:1}}

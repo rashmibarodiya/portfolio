@@ -16,8 +16,7 @@ export default function Home(){
         <Exp/>
         <Projects/>
         <Contact/>
-        
-        hi there 
+
       </div>
     )
 }
