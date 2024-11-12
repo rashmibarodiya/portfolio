@@ -36,7 +36,7 @@ export default function Navbar() {
                     />
                     <MdOutlinePhoneEnabled className="cursor-pointer" 
                     onClick={()=>
-                        window.location.href=phone
+                        window.location.href=`${phone}`
                     }
                     />
                 </div>
