@@ -6,6 +6,7 @@ import adven from "/badge/adven.png"
 
 const hfest = import.meta.env.VITE_HACKTOBERFEST!
 export default function Achievements() {
+
     return (
         <div className="border-b border-neutral-900 text-white">
             <motion.h1
