@@ -30,7 +30,7 @@ export default function About() {
                      whileInView={{opacity:1,x:0}}
                      initial={{opacity:0,x:100}}
                      transition={{duration:0.5}}
-                    className="text-neutral-300 max-w-xl lg:mt-8 justify-center lg:justify-left">
+                    className="text-neutral-300 font-thin max-w-xl lg:mt-8 justify-center lg:justify-left">
                         {ABOUT}
                     </motion.div>
 

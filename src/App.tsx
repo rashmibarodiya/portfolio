@@ -1,5 +1,6 @@
 import './App.css'
 import About from './components/About'
+import Achievements from './components/Achievement'
 import Contact from './components/Contact'
 import Exp from './components/Experience'
 import Intro from './components/Landing'
@@ -23,6 +24,7 @@ function App() {
         <Tech/>
         <Exp/>
         <Projects/>
+        <Achievements/>
         <Contact/>
         
          
