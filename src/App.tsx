@@ -2,6 +2,7 @@ import './App.css'
 import About from './components/About'
 import Achievements from './components/Achievement'
 import Contact from './components/Contact'
+import OpenExp from './components/OpenSource'
 import Exp from './components/Experience'
 import Intro from './components/Landing'
 import Navbar from './components/Navbar'
@@ -23,6 +24,8 @@ function App() {
         <About />
         <Tech/>
         <Exp/>
+        <OpenExp/>
+       
         <Projects/>
         <Achievements/>
         <Contact/>

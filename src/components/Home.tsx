@@ -1,6 +1,6 @@
 import About from './About'
 import Contact from './Contact'
-import Exp from './Experience'
+import Exp from './OpenSource'
 import Intro from './Landing'
 import Navbar from './Navbar'
 import Projects from './Project'

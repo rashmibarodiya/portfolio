@@ -1,6 +1,7 @@
 import { FaReact, FaNodeJs, FaGithub, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiPostgresql, SiPostman } from "react-icons/si";
-import { TbBrandNextjs, TbBrandTypescript } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandTypescript, TbBrandRedux } from "react-icons/tb";
+import { BsBootstrap } from "react-icons/bs";
 import { RiJavascriptLine, RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import { motion } from "framer-motion"
@@ -57,6 +58,12 @@ export default function Tech() {
                     <TbBrandTypescript className="text-7xl text-cyan-700" />
                 </motion.div>
                 <motion.div
+                    variants={techMove(1.1)}
+                    animate="animate"
+                    initial="initial" className="border rounded-2xl p-4 border-neutral-800">
+                    <TbBrandRedux className="text-7xl text-purple-600" />
+                </motion.div>
+                <motion.div
                     variants={techMove(1.5)}
                     animate="animate"
                     initial="initial" className="border rounded-2xl p-4 border-neutral-800">
@@ -79,6 +86,12 @@ export default function Tech() {
                     animate="animate"
                     initial="initial" className="border rounded-2xl p-4 border-neutral-800">
                     <SiPostgresql className="text-7xl text-sky-700" />
+                </motion.div>
+                <motion.div
+                    variants={techMove(1.8)}
+                    animate="animate"
+                    initial="initial" className="border rounded-2xl p-4 border-neutral-800">
+                    <BsBootstrap className="text-7xl text-indigo-600" />
                 </motion.div>
                 <motion.div
                     variants={techMove(1)}
